@@ -299,7 +299,7 @@ write_to_rbox = 0x0804A648|1;
 rboxid_set_field = 0x080048BC|1;
 draw_status_ailment_maybe = 0x08049934|1;
 load_gfxc_health_bar = 0x08034964|1;
-hpbar_data_set = 0x08048150|1;
+hpbox_data_set = 0x08048150|1;
 sync_hpbox_vram = 0x08049FD8|1;
 battle_type_is_double = 0x08075290|1;
 
