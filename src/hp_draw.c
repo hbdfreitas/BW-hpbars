@@ -325,6 +325,10 @@ void draw_name_gender(struct pokemon* pokemon, u8 obj_id, u8 tile_id) {
 	char female [] = {0x0, 0xB6, 0xFF};
 	u8 gender = pokemon_get_gender(pokemon);
 	
+	string_buffer[0] = 0x0;
+	string_buffer[1] = 0xFF;
+	outlined_font_draw(obj_id, tile_id -1, TILE_SIZE);
+	
 	str_cpy_len(string_buffer, pokemon->name, 10);
 	memset(string_buffer + 10, 0xFF, 1);
 	u8 str_len = string_length(string_buffer);
